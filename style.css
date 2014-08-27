@@ -1,14 +1,20 @@
-.smelly {
-	font-size:8px;
+* {
+	font-family:'Ubuntu', sans-serif;
 }
-div.main {
+body {
+	margin:0;
+	height:100%;
+}
+div.wrapper {
 	max-width:1200px;
 	margin:auto;
+	position:relative;
+	height:inherit;
 }
 div#header,
 div#footer {
 	position:absolute;
-	background-color:black;
+	background-color:#313131;
 	color:white;
 	height:50px;
 	max-width:inherit;
@@ -17,10 +23,28 @@ div#footer {
 div#header {
 	top:0px;
 }
+.drewmcarthur { 
+	padding: 15px; 
+	font-size:18px;
+	height:20px;
+	width:auto;
+	float:left;
+	color:white;
+	cursor:default;
+}
+div.drewmcarthur:hover {
+	background-color:black;
+}
+div#main {
+	height:76.4%;
+	padding:75px 10px;
+	overflow:scroll;
+}
 div#footer {
 	bottom:0px;
 }
-div.main {
-	margin-top:50px;
+img.footer-link {
+	height:25px;
+	padding:12px;
+	float:right;
 }
-.drewmcarthur { padding: 10px; }
