@@ -5,3 +5,12 @@ div.main {
 	max-width:1200px;
 	margin:auto;
 }
+div#footer {
+	position:absolute;
+	bottom:0;
+	background-color:black;
+	color:white;
+	height:50px;
+	max-width:inherit;
+	width:100%;
+}
