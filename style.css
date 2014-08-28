@@ -19,7 +19,8 @@ div#footer {
 	height:50px;
 	max-width:inherit;
 	width:100%;
-	transition: height .5s;
+	transition-duration:.5s;
+	transition-property:height,width,margin-left;
 }
 div#header {
 	top:0px;
@@ -32,7 +33,8 @@ div#header {
 	float:left;
 	color:white;
 	cursor:default;
-	transition: padding .5s;
+	transition-duration:.5s;
+	transition-property:padding,height,width,margin-left;
 }
 div.drewmcarthur:hover {
 	background-color:black;
@@ -63,6 +65,8 @@ img.footer-link:hover {
 div#header.mini,
 div#footer.mini {
 	height:30px;
+	width:30%;
+	margin-left:70%;
 }
 
 div#header.mini div.drewmcarthur,
