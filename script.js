@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#header").load("/pages/header.html");
+	$("#header").load("/pages/footer.html");
 	$("#footer").load("/pages/footer.html").addClass('mini');
 /*
  * this doesn't work for some reason ???
@@ -8,23 +8,20 @@ $(document).ready(function(){
 		//window.location.href = '/'
 	});
 */
-	$('div#main').scroll(function() {
+	var D = $(document);
+	D.scroll(function() {
 		//header and footer grow/shrink functions.  Header starts big and footer starts small.
-		if($('div#main').scrollTop() > 0) {
+		if(D.scrollTop() > 20) {
 			//make header small
 			$('#header').addClass('mini');
-			console.log('header small');
 		} else {
 			$('#header').removeClass('mini');
-			console.log('header big');
 		}
-		if($('div#main').scrollTop() + $('div#main').height() == $(document).height()) {
+		if(D.scrollTop() + $(window).height() > D.height() - 20 ){
 			//make footer full
 			$('#footer').removeClass('mini');
-			console.log('footer big');
 		} else {
 			$('#footer').addClass('mini');
-			console.log('footer small');
 		}
 	});
 });
