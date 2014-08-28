@@ -4,6 +4,7 @@
 body {
 	margin:0;
 	height:100%;
+	overflow:hidden;
 }
 div.wrapper {
 	max-width:1200px;
@@ -13,7 +14,7 @@ div.wrapper {
 }
 div#header,
 div#footer {
-	position:absolute;
+	position:fixed;
 	background-color:#313131;
 	color:white;
 	height:50px;
@@ -41,10 +42,18 @@ div#main {
 	overflow:scroll;
 }
 div#footer {
+	position:fixed;
 	bottom:0px;
 }
 img.footer-link {
-	height:25px;
-	padding:12px;
+	height:36px;
+	padding:7px;
 	float:right;
+	cursor:default;
+}
+img.footer-link:hover {
+	background-color:black;
+}
+.mini {
+	height:40px!important;
 }
