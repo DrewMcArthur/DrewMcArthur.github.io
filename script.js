@@ -24,4 +24,10 @@ $(document).ready(function(){
 			$('#footer').addClass('mini');
 		}
 	});
+	var date2 = new Date(2014,9,12,03,01,00,00);
+	setInterval(function() {
+		$('#main').html(
+			Math.floor((date2 - (new Date()))/1000/60/60/60 + 1) + ":" + Math.floor( ( date2 - new Date() ) / 1000 / 60 % 60 + 1) + ":" + Math.floor( ( date2 - new Date() )/ 1000 % 60 + 1 )
+		);
+	},1000);
 });
