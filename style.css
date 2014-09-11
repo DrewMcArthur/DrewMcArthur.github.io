@@ -44,10 +44,8 @@ div#main {
 	height:76.4%;
 	padding:75px 10px;
 }
-@media screen and (min-width:600px){
-	div#main {
-		font-size:15em;
-	}
+div#main div.countdown {
+	font-size:15em;
 }
 div#footer {
 	position:fixed;
