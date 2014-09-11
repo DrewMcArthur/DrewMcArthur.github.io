@@ -45,6 +45,6 @@ $(document).ready(function(){
 		if(currSec < 10){currSec = "0"+currSec;}
 		if(currMin < 10){currMin = "0"+currMin;}
 		if(currHour < 10){currHour = "0"+currHour;}
-		$('#main').html("<h1>Time left until the iPhone is available for preorder. </h1><br>"+currHour+":"+currMin+":"+currSec);
+		$('#main').html("<h1>Time left until the iPhone is available for preorder. </h1><br><div class=\"countdown\""+currHour+":"+currMin+":"+currSec+"</div>");
 	},1000);
 });
