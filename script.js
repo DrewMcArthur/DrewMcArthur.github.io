@@ -1,9 +1,6 @@
 $(document).ready(function(){
 	$("#header").load("/pages/footer.html");
-	$("#footer").load("/pages/footer.html").addClass('mini');
-/*
- * this doesn't work for some reason ???
-	$("#footer .drewmcarthur").on("click", function() {
+	$("#footer").load("/pages/footer.html").addClass('mini'); /* * this doesn't work for some reason ???  $("#footer .drewmcarthur").on("click", function() {
 		console.log('clicked');
 		//window.location.href = '/'
 	});
@@ -45,6 +42,6 @@ $(document).ready(function(){
 		if(currSec < 10){currSec = "0"+currSec;}
 		if(currMin < 10){currMin = "0"+currMin;}
 		if(currHour < 10){currHour = "0"+currHour;}
-		$('#main').html("<h1>Time left until the iPhone is available for preorder. </h1><br><div class=\"countdown\""+currHour+":"+currMin+":"+currSec+"</div>");
+		$('#main .countdown').html(currHour+":"+currMin+":"+currSec);
 	},1000);
 });
