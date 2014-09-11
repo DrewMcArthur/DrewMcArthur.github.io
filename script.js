@@ -24,10 +24,27 @@ $(document).ready(function(){
 			$('#footer').addClass('mini');
 		}
 	});
-	var date2 = new Date(2014,9,12,03,01,00,00);
+	var date2 = new Date(2014,8,12,03,01,00,00);
 	setInterval(function() {
-		$('#main').html(
-			Math.floor((date2 - (new Date()))/1000/60/60/60 + 1) + ":" + Math.floor( ( date2 - new Date() ) / 1000 / 60 % 60 + 1) + ":" + Math.floor( ( date2 - new Date() )/ 1000 % 60 + 1 )
-		);
+		//hours
+			var currHour = Math.floor(
+				(
+					date2 - new Date()
+				) / 1000 / 60 / 60 % 60);
+		//minutes
+			var currMin = Math.floor(
+				(
+					date2 - new Date() 
+				) / 1000 / 60 % 60)
+		//seconds
+			var currSec = Math.floor( 
+				( 
+					date2 - new Date() 
+				)/ 1000 % 60
+			)
+		if(currSec < 10){currSec = "0"+currSec;}
+		if(currMin < 10){currMin = "0"+currMin;}
+		if(currHour < 10){currHour = "0"+currHour;}
+		$('#main').html(currHour+":"+currMin+":"+currSec);
 	},1000);
 });
