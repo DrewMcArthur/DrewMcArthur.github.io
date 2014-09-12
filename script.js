@@ -21,6 +21,9 @@ $(document).ready(function(){
 			$('#footer').addClass('mini');
 		}
 	});
+/*
+ * Timer for iPhone preorder
+ *
 	var date2 = new Date(2014,8,12,03,01,00,00);
 	setInterval(function() {
 		//hours
@@ -44,4 +47,5 @@ $(document).ready(function(){
 		if(currHour < 10){currHour = "0"+currHour;}
 		$('#main .countdown').html(currHour+":"+currMin+":"+currSec);
 	},1000);
+*/
 });
