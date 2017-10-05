@@ -1,7 +1,7 @@
 * {
 	font-family:'Lato','Ubuntu', sans-serif;
 	font-weight:300;
-  font-size: 18px;
+  font-size: 20px;
 }
 body {
 	margin: 0;
@@ -21,16 +21,10 @@ body {
 .main > div {
   margin: 0 0 .5em .5em;
 }
-
-@media (max-width: 897px){
+@media (max-width: 720px){
   body {
     background-image: url('/centered_site_bg.jpg');
     background-position: bottom;
-    background-size: cover;
-  }
-}
-@media (max-width: 720px){
-  body {
     background-size: contain;
   }
 }
