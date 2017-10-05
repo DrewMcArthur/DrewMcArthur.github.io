@@ -8,6 +8,7 @@ body {
   background-image: url('/FullSizeRender.jpg');
   background-position: center;
   background-size: cover;
+  -webkit-font-smoothing: antialiased;
 }
 .main {
   width: 100%;

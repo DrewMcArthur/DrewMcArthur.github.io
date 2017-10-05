@@ -1,103 +1,51 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
+body.disabled {
     color: #FFF;
     background: #322f30;
     -webkit-font-smoothing: antialiased;
 }
 a {
     text-decoration: none;
-    color: #fff;
 }
-p > a:hover{
+a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
 }
-ul {
+ul.social-icons {
     padding:0;
     list-style: none;
     margin:0;
-}
-.social-icon {
-    color: #fff;
 }
 .social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
 }
-.social-icons a {
-    color: #fff;
+.social-icons a > i {
+    font-size: 20px;
+    color: #777;
     text-decoration: none;
-}
-.fa-facebook {
-    padding:10px 14px;
+    padding: 4px 4px;
+    width: 20px;
+    text-align: center;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
 }
 .fa-facebook:hover {
-    background-color: #3d5b99;
-}
-.fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-twitter:hover {
-    background-color: #00aced;
-}
-.fa-instagram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+    color: #4676dc;
 }
 .fa-instagram:hover {
-    background-color: #eb8231;
+    color: #eb8231;
 }
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+.fa-twitter:hover {
+    color: #52a0fd;
 }
 .fa-linkedin:hover {
-    background-color: #0073a4;
+    color: #0073a4;
 }
-.fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-google-plus:hover {
-    background-color: #e25714;
+.fa-github:hover{
+    color: #000;
 }
