@@ -21,6 +21,13 @@ body {
 .main > div {
   margin: 0 0 .5em .5em;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
 @media (max-width: 720px){
   body {
     background-image: url('/centered_site_bg.jpg');
