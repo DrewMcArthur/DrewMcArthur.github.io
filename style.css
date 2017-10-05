@@ -16,6 +16,6 @@ body {
   margin: auto;
   padding: 5em;
 }
-.main > * {
-  margin-bottom: .5em;
+.main > div {
+  margin: 0 0 .5em .5em;
 }
