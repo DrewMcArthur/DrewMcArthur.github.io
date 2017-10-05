@@ -3,19 +3,28 @@
 	font-weight:300;
 }
 body {
-	margin:0;
-	height:100%;
-  background-image: url('/FullSizeRender.jpg');
+	margin: 0;
+	height: 100%;
+  background-image: url('/site_bg.jpg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
 }
 .main {
-  width: 100%;
+  width: 80%;
+  padding: 10%;
   max-width: 50em;
   margin: auto;
-  padding: 5em;
 }
 .main > div {
   margin: 0 0 .5em .5em;
+}
+
+@media (max-width: 897px){
+  body {
+    background-image: url('/centered_site_bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+  }
 }
