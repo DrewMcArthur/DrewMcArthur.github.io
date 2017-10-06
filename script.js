@@ -5,7 +5,10 @@ $(document).load(function(){
 */
 
 // once all images have loaded
-document.addEventListener("DOMContentLoaded", function(event) { 
+//document.addEventListener("load", function() { 
+$('.main').on('click', function(){
   // hide the div that contains the blurred backgroud
+  document.getElementById("tiny_bg").style.animation = "loaded .5s cubic-bezier(0,0,1,1);";
   //document.getElementById("tiny_bg").style.visibility = "hidden";
+
 });
