@@ -17,10 +17,10 @@ body {
   padding: 10%;
   max-width: 50em;
   margin: auto;
+  animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
 .main > div {
   margin: 0 0 .5em .5em;
-  animation: fadeintop 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
 a {
     text-decoration: none;
@@ -38,22 +38,10 @@ a:hover{
 }
 
 /* idea for fade in taken from https://malone.io */
-@keyframes fadeintop {
+@keyframes fadein {
   from {
     opacity: 0;
-    transform: translateY(-2em);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeinside {
-  from {
-    opacity: 0;
-    transform: translateX(-4em);
+    transform: translateX(-5em);
   }
 
   to {
@@ -61,4 +49,3 @@ a:hover{
     transform: translateX(0);
   }
 }
-
