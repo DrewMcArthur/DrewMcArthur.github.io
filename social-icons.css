@@ -1,13 +1,9 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body.disabled {
-    color: #FFF;
-    background: #322f30;
-    -webkit-font-smoothing: antialiased;
-}
 ul.social-icons {
     padding:0;
     list-style: none;
     margin:0;
+    animation: fadeinside 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
 .social-icons li {
     vertical-align: top;
@@ -18,7 +14,7 @@ ul.social-icons {
     font-size: 24px;
     color: #777;
     text-decoration: none;
-    padding: 4px 4px;
+    padding: 4px;
     width: 20px;
     text-align: center;
     -o-transition:.5s;
@@ -26,6 +22,9 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
+}
+.fa:hover {
+  padding: 4px 8px;
 }
 .fa-facebook:hover {
     color: #4676dc;
