@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	height: 100%;
-  background-image: url('/site_bg.jpg');
+  background-image: url('/assets/bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ a:hover{
 }
 @media (max-width: 720px){
   body {
-    background-image: url('/centered_site_bg.jpg');
+    background-image: url('/assets/centered_bg.jpg');
     background-position: bottom;
     background-size: contain;
   }
