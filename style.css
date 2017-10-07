@@ -36,7 +36,7 @@ body {
   will-change: transform, opacity;
 }
 #tiny_bg.faded {
-  animation: loaded .5s cubic-bezier(0.69, 0.48, 0.85, 0.63);
+  animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
   opacity: 0;
 }
 .main {
