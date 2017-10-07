@@ -36,6 +36,7 @@ body {
   will-change: transform, opacity;
 }
 #tiny_bg.faded {
+  transform: scale(1);
   animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
   opacity: 0;
 }
@@ -57,10 +58,18 @@ a:hover{
     text-decoration: underline;
 }
 @media (max-width: 720px){
-  #bg {
-    background-image: url('/assets/centered_bg.jpg');
+  #bg, #tiny_bg {
     background-position: bottom;
     background-size: contain;
+  }
+  #bg {
+    background-image: url('/assets/centered_bg.jpg');
+  }
+  #tiny_bg {
+    background-image: url('/assets/tiny_centered_bg.jpg');
+  }
+  #tiny_bg.faded {
+    transform: scale(1.5);
   }
 }
 
@@ -70,7 +79,6 @@ a:hover{
     opacity: 0;
     transform: translateX(-5em);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
