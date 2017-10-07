@@ -70,7 +70,7 @@ a:hover{
     background-image: url('/assets/tiny_centered_bg.jpg');
   }
   #tiny_bg.faded {
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
 
