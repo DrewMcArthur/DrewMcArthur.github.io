@@ -1,14 +1,17 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+ul.pro-icons,
 ul.social-icons {
     padding:0;
     list-style: none;
     margin:0;
 }
+.pro-icons li,
 .social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
 }
+.pro-icons a > i,
 .social-icons a > i {
     font-size: 24px;
     color: #777;
@@ -22,8 +25,27 @@ ul.social-icons {
     -webkit-transition:.5s;
     transition: .5s;
 }
-.fa:hover {
+
+.pro-icons a > i.fa-envelope,
+.pro-icons a > i.fa-file-text {
+  font-size: 20px;
+  padding: 5px;
+}
+
+ul a > i.fa:hover {
   padding: 4px 8px;
+}
+.fa-envelope:hover {
+    color: #c04743;
+}
+.fa-linkedin:hover {
+    color: #0073a4;
+}
+.fa-github:hover {
+    color: #000;
+}
+.fa-file-text:hover {
+    color: #52a651;
 }
 .fa-facebook:hover {
     color: #4676dc;
@@ -36,10 +58,4 @@ ul.social-icons {
 }
 .fa-snapchat-ghost:hover {
     color: #FFEC00;
-}
-.fa-linkedin:hover {
-    color: #0073a4;
-}
-.fa-github:hover{
-    color: #000;
 }
