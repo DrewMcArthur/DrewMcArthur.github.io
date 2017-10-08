@@ -1,3 +1,6 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/* general rules */
 * {
 	font-family:'Lato','Ubuntu', sans-serif;
 	font-weight:300;
@@ -9,6 +12,15 @@ body {
   position: fixed;
   -webkit-font-smoothing: antialiased;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* background images */
 .bg_wrapper {
   overflow: hidden;
 }
@@ -42,6 +54,8 @@ body {
   animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
   opacity: 0;
 }
+
+/* main text */
 .main {
   width: 80%;
   padding: 10%;
@@ -52,13 +66,57 @@ body {
 .main > div {
   margin: 0 0 .5em .5em;
 }
-a {
+
+/* social icon links */
+ul.social-icons {
+    padding:0;
+    list-style: none;
+    margin:0;
+}
+ul.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+ul.social-icons a > i {
+    font-size: 24px;
+    color: #777;
     text-decoration: none;
-    color: black;
+    padding: 4px;
+    width: 20px;
+    text-align: center;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
 }
-a:hover{
-    text-decoration: underline;
+.social-icons a > i.fa:hover {
+  padding: 4px 8px;
 }
+
+/* brand-specific coloring for icon links */
+.fa-facebook:hover {
+    color: #4676dc;
+}
+.fa-instagram:hover {
+    color: #eb8231;
+}
+.fa-twitter:hover {
+    color: #52a0fd;
+}
+.fa-snapchat-ghost:hover {
+    color: #FFEC00;
+}
+.fa-linkedin:hover {
+    color: #0073a4;
+}
+.fa-github:hover{
+    color: #000;
+}
+
+/* when the screen is more horizontal than vertical, 
+   change to a centered background */
 @media (max-aspect-ratio: 13/12){
   #bg, #tiny_bg {
     background-position: bottom;
@@ -86,6 +144,7 @@ a:hover{
     transform: translateX(0);
   }
 }
+/* used for progressive background image loading */
 @keyframes loaded {
   from {
     opacity: 1;
