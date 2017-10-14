@@ -4,7 +4,8 @@
 * {
 	font-family:'Lato','Ubuntu', sans-serif;
 	font-weight:300;
-  font-size: 20px; }
+  font-size: 22px; 
+}
 body {
 	margin: 0;
   height: 100vh; 
@@ -107,6 +108,9 @@ ul.social-icons a > i {
 }
 .fa-snapchat-ghost:hover {
     color: #FFEC00;
+}
+.fa-vimeo:hover {
+    color: #3D95CE;
 }
 .fa-linkedin:hover {
     color: #0073a4;
