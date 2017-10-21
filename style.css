@@ -67,7 +67,7 @@ a:hover{
 
 /* contact card modal */
 .vcard {
-  float: right;
+  float: left;
   width: 250px;
   padding: .7em;
   margin: 6% 5% 0 6%;
@@ -102,9 +102,11 @@ a:hover{
 .vcard .photo {
   height: 50px;
   width: 50px;
-  border: 1px solid black;
-  border-radius: 50px;
   margin: auto;
+}
+.vcard .photo img {
+  max-width: 100%;
+  border-radius: 100%;
 }
 .vcard .text .name,
 .vcard .text .email {
@@ -214,16 +216,22 @@ a.social-icon > i.fa-address-card {
 @media (max-width: 590px) and (min-width: 581px) {
   .vcard {
     margin-top: -12%;
+    float: right;
   }
 }
 @media (max-width: 580px) and (min-width: 551px) {
   .vcard {
     margin-top: -6%;
+    float: right;
   }
 }
 @media (max-width: 550px) {
   .main {
     width: 78%;
+  }
+  .vcard {
+    float: right;
+    margin-top: 1em;
   }
 }
 
