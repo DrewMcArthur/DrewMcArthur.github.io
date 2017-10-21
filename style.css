@@ -1,145 +1,171 @@
 /* general rules */
 * {
-    font-family:'Lato','Ubuntu', sans-serif;
-    font-weight:300;
-    font-size: 22px; 
-    line-height: 1.6em;
+  font-family:'Lato','Ubuntu', sans-serif;
+  font-weight:300;
+  font-size: 22px; 
+  line-height: 1.6em;
 }
 body {
-    margin: 0;
-    height: 100vh; 
-    width: 100vw;
-    position: fixed;
-    -webkit-font-smoothing: antialiased;
+  margin: 0;
+  height: 100vh; 
+  width: 100vw;
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
 }
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* background images */
 .bg_wrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
 #bg, #tiny_bg {
-    position: absolute;
-    height: 100vh; 
-    width: 100vw;
-    overflow: hidden;
+  position: absolute;
+  height: 100vh; 
+  width: 100vw;
+  overflow: hidden;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #bg {
-    background-image: url('/assets/bg.jpg');
-    z-index: -5;
+  background-image: url('/assets/bg.jpg');
+  z-index: -5;
 }
 #tiny_bg {
-    background-image: url('/assets/tiny_bg.jpg');
+  background-image: url('/assets/tiny_bg.jpg');
 
-    filter: blur(3vw);
-    transform: scale(1.15);
-    overflow: hidden;
-    z-index: -1;
-    opacity: 1;
+  filter: blur(3vw);
+  transform: scale(1.15);
+  overflow: hidden;
+  z-index: -1;
+  opacity: 1;
 
-    will-change: transform, opacity;
+  will-change: transform, opacity;
 }
 #tiny_bg.faded {
-    transform: scale(1);
-    animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
-    opacity: 0;
+  transform: scale(1);
+  animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
+  opacity: 0;
 }
 
 /* main text */
 .main {
-    float: left;
-    width: 30%;
-    max-width: 50em;
-    min-width: 258px;
-    margin: 8% 0 0 11%;
-    animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  float: left;
+  width: 30%;
+  max-width: 50em;
+  min-width: 151px;
+  margin: 8% 0 0 11%;
+  animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
 .vcard {
-    float: left;
-    width: 30%;
-    max-width: 50em;
-    min-width: 250px;
-    padding: 2% 4%;
-    margin: 6% 5% 0 6%;
-    animation: faderight 1s cubic-bezier(0.12, 0.98, 0.38, 1);
-    border: 1px solid black;
-    border-radius: 3px;
+  float: right;
+  width: 250px;
+  padding: .7em 1.4em;
+  margin: 6% 5% 0 6%;
+  border: 1px solid black;
+  border-radius: 3px;
+  opacity: 0;
+  position: relative;
+}
+.vcard.close {
+  transform: translateX(5em);
+  animation: fadeoutright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+}
+.vcard.open {
+  transform: translateX(0);
+  animation: fadeinright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  opacity: 1;
 }
 .vcard * {
-    font-size: 20px;
+  font-size: 20px;
 }
 .vcard .phone {
-    margin-left: -.6em;
-    font-size: 18px;
+  margin-left: -.6em;
+  font-size: 18px;
+}
+.vcard .dl-btn, 
+.vcard .x-btn {
+  position: absolute;
+  transform: scale(0.5);
+}
+.vcard .dl-btn:hover, 
+.vcard .x-btn:hover {
+  transform: scale(0.55);
+}
+.vcard .dl-btn {
+  top: 30%;
+  right: 5.4%;
+}
+.vcard .x-btn {
+  top: 7%;
+  right: 5%;
 }
 
 /* social icon links */
 ul.social-icons {
-    padding:0;
-    list-style: none;
-    margin:0;
-    float: left;
+  padding:0;
+  list-style: none;
+  margin:0;
+  float: left;
 }
 ul.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+  vertical-align: top;
+  display: inline;
+  height: 100px;
 }
 a.social-icon > i {
-    font-size: 24px;
-    color: #777;
-    text-decoration: none;
-    padding: 4px;
-    width: 20px;
-    text-align: center;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
+  font-size: 24px;
+  color: #777;
+  text-decoration: none;
+  padding: 4px;
+  width: 20px;
+  text-align: center;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
 }
 .social-icons a > i.fa:hover {
-    padding: 4px 8px;
+  padding: 4px 8px;
 }
 
 a.social-icon > i.fa-address-card {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* brand-specific coloring for icon links */
-.fa-address-card:hover{
-    color: #000;
+.fa-address-card:hover,
+.fa-address-card.open {
+  color: #9e3416;
 }
 .fa-facebook:hover {
-    color: #4676dc;
+  color: #4676dc;
 }
 .fa-instagram:hover {
-    color: #eb8231;
+  color: #eb8231;
 }
 .fa-twitter:hover {
-    color: #52a0fd;
+  color: #52a0fd;
 }
 .fa-snapchat-ghost:hover {
-    color: #FFEC00;
+  color: #FFEC00;
 }
 .fa-vimeo:hover {
-    color: #3D95CE;
+  color: #3D95CE;
 }
 .fa-linkedin:hover {
-    color: #0073a4;
+  color: #0073a4;
 }
 .fa-github:hover{
-    color: #000;
+  color: #000;
 }
 
 /* when the screen is more horizontal than vertical, 
@@ -157,6 +183,31 @@ a.social-icon > i.fa-address-card {
   }
   #tiny_bg.faded {
     transform: scale(1);
+  }
+}
+/* for collapsing the row of social icons into two */
+@media (max-width: 728px){
+  .main {
+    min-width: 151px;
+  }
+  ul.social-icons {
+    float: left;
+  }
+}
+/* for when the address card gets bumped to the next line */
+@media (max-width: 629px) and (min-width: 581px) {
+  .vcard {
+    margin-top: -12%;
+  }
+}
+@media (max-width: 580px) and (min-width: 531px) {
+  .vcard {
+    margin-top: -6%;
+  }
+}
+@media (max-width: 530px) {
+  .main {
+    width: 78%;
   }
 }
 
@@ -180,6 +231,16 @@ a.social-icon > i.fa-address-card {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes fadeoutright {
+  from {
+    opacity: 1;
+    transform: translateX(0em);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(5em);
   }
 }
 /* used for progressive background image loading */
