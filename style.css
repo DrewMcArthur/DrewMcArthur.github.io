@@ -64,16 +64,22 @@ a:hover{
   margin: 8% 0 0 11%;
   animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
+
+/* contact card modal */
 .vcard {
   float: right;
   width: 250px;
-  padding: .7em 1.4em;
+  padding: .7em;
   margin: 6% 5% 0 6%;
   border: 1px solid black;
   border-radius: 3px;
   opacity: 0;
   position: relative;
 }
+.vcard * {
+  font-size: 20px;
+}
+
 .vcard.close {
   transform: translateX(5em);
   animation: fadeoutright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
@@ -83,29 +89,39 @@ a:hover{
   animation: fadeinright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
   opacity: 1;
 }
-.vcard * {
-  font-size: 20px;
+
+.vcard .icons {
+  float: left;
+  width: 50px;
+  padding: 0.5em;
+}
+.vcard .text {
+  float: left;
+}
+
+.vcard .photo {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: auto;
+}
+.vcard .text .name,
+.vcard .text .email {
+  margin-left: 0.6em;
 }
 .vcard .phone {
-  margin-left: -.6em;
   font-size: 18px;
 }
+
 .vcard .dl-btn, 
 .vcard .x-btn {
-  position: absolute;
   transform: scale(0.5);
+  text-align: center;
 }
 .vcard .dl-btn:hover, 
 .vcard .x-btn:hover {
   transform: scale(0.55);
-}
-.vcard .dl-btn {
-  top: 30%;
-  right: 5.4%;
-}
-.vcard .x-btn {
-  top: 7%;
-  right: 5%;
 }
 
 /* social icon links */
@@ -195,7 +211,7 @@ a.social-icon > i.fa-address-card {
   }
 }
 /* for when the address card gets bumped to the next line */
-@media (max-width: 653px) and (min-width: 581px) {
+@media (max-width: 590px) and (min-width: 581px) {
   .vcard {
     margin-top: -12%;
   }
