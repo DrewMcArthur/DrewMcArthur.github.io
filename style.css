@@ -58,7 +58,7 @@ a:hover{
 /* main text */
 .main {
   float: left;
-  width: 30%;
+  width: 33%;
   max-width: 50em;
   min-width: 258px;
   margin: 8% 0 0 11%;
@@ -204,28 +204,17 @@ a.social-icon > i.fa-address-card {
   }
 }
 /* for collapsing the row of social icons into two */
-@media (max-width: 732px) and (min-width: 551px) {
+@media (max-width: 732px) and (min-width: 557px) {
   .main {
     min-width: 151px;
+    width: 151px;
   }
   ul.social-icons {
     float: none;
   }
 }
 /* for when the address card gets bumped to the next line */
-@media (max-width: 590px) and (min-width: 581px) {
-  .vcard {
-    margin-top: -12%;
-    float: right;
-  }
-}
-@media (max-width: 580px) and (min-width: 551px) {
-  .vcard {
-    margin-top: -6%;
-    float: right;
-  }
-}
-@media (max-width: 550px) {
+@media (max-width: 556px) {
   .main {
     width: 78%;
   }
