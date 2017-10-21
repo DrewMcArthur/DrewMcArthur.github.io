@@ -1,15 +1,16 @@
 /* general rules */
 * {
-	font-family:'Lato','Ubuntu', sans-serif;
-	font-weight:300;
-  font-size: 22px; 
+    font-family:'Lato','Ubuntu', sans-serif;
+    font-weight:300;
+    font-size: 22px; 
+    line-height: 1.6em;
 }
 body {
-	margin: 0;
-  height: 100vh; 
-  width: 100vw;
-  position: fixed;
-  -webkit-font-smoothing: antialiased;
+    margin: 0;
+    height: 100vh; 
+    width: 100vw;
+    position: fixed;
+    -webkit-font-smoothing: antialiased;
 }
 a {
     text-decoration: none;
@@ -21,49 +22,65 @@ a:hover{
 
 /* background images */
 .bg_wrapper {
-  overflow: hidden;
+    overflow: hidden;
 }
 #bg, #tiny_bg {
-  position: absolute;
-  height: 100vh; 
-  width: 100vw;
-  overflow: hidden;
+    position: absolute;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #bg {
-  background-image: url('/assets/bg.jpg');
-  z-index: -5;
+    background-image: url('/assets/bg.jpg');
+    z-index: -5;
 }
 #tiny_bg {
-  background-image: url('/assets/tiny_bg.jpg');
+    background-image: url('/assets/tiny_bg.jpg');
 
-  filter: blur(3vw);
-  transform: scale(1.15);
-  overflow: hidden;
-  z-index: -1;
-  opacity: 1;
+    filter: blur(3vw);
+    transform: scale(1.15);
+    overflow: hidden;
+    z-index: -1;
+    opacity: 1;
 
-  will-change: transform, opacity;
+    will-change: transform, opacity;
 }
 #tiny_bg.faded {
-  transform: scale(1);
-  animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
-  opacity: 0;
+    transform: scale(1);
+    animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
+    opacity: 0;
 }
 
 /* main text */
 .main {
-  width: 80%;
-  padding: 10%;
-  max-width: 50em;
-  margin: auto;
-  animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+    float: left;
+    width: 30%;
+    max-width: 50em;
+    min-width: 258px;
+    margin: 8% 0 0 11%;
+    animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
 }
-.main > div {
-  margin: 0 0 .5em .5em;
+.vcard {
+    float: left;
+    width: 30%;
+    max-width: 50em;
+    min-width: 250px;
+    padding: 2% 4%;
+    margin: 6% 5% 0 6%;
+    animation: faderight 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.vcard * {
+    font-size: 20px;
+}
+.vcard .phone {
+    margin-left: -.6em;
+    font-size: 18px;
 }
 
 /* social icon links */
@@ -71,13 +88,14 @@ ul.social-icons {
     padding:0;
     list-style: none;
     margin:0;
+    float: left;
 }
 ul.social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
 }
-ul.social-icons a > i {
+a.social-icon > i {
     font-size: 24px;
     color: #777;
     text-decoration: none;
@@ -91,10 +109,17 @@ ul.social-icons a > i {
     transition: .5s;
 }
 .social-icons a > i.fa:hover {
-  padding: 4px 8px;
+    padding: 4px 8px;
+}
+
+a.social-icon > i.fa-address-card {
+    font-size: 20px;
 }
 
 /* brand-specific coloring for icon links */
+.fa-address-card:hover{
+    color: #000;
+}
 .fa-facebook:hover {
     color: #4676dc;
 }
@@ -140,6 +165,17 @@ ul.social-icons a > i {
   from {
     opacity: 0;
     transform: translateX(-5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* used for vcard */
+@keyframes fadeinright {
+  from {
+    opacity: 0;
+    transform: translateX(5em);
   }
   to {
     opacity: 1;
