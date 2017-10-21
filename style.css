@@ -97,26 +97,45 @@ ul.social-icons a > i {
 }
 
 /* brand-specific coloring for icon links */
-.fa-facebook:hover {
+i.fa-facebook:hover {
     color: #4676dc;
 }
-.fa-instagram:hover {
+i.fa-instagram:hover {
     color: #eb8231;
 }
-.fa-twitter:hover {
+i.fa-twitter:hover {
     color: #52a0fd;
 }
-.fa-snapchat-ghost:hover {
+i.fa-snapchat-ghost:hover {
     color: #FFEC00;
 }
-.fa-vimeo:hover {
+i.fa-vimeo:hover {
     color: #3D95CE;
 }
-.fa-linkedin:hover {
+i.fa-linkedin:hover {
     color: #0073a4;
 }
-.fa-github:hover{
+i.fa-github:hover{
     color: #000;
+}
+
+/* loading images for the qr codes that will appear on hover */
+i::after {
+    opacity: 0;
+    position: absolute;
+    transform: scale(0.18);
+    top: -14.7em;
+    left: 2em;
+    z-index: -1;
+    /*transition: opacity .5s cubic-bezier(0.12, 0.98, 0.38, 1);*/
+}
+i.fa-snapchat-ghost::after {
+    content: url('/assets/qr_snap.png');
+}
+i:hover::after {
+    visibility: visible;
+    opacity: 1;
+    /*animation: qrfadein .5s cubic-bezier(0.12, 0.98, 0.38, 1);*/
 }
 
 /* when the screen is more horizontal than vertical, 
@@ -146,6 +165,27 @@ ul.social-icons a > i {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+/* used to fade in the qr codes for the social links */
+@keyframes qrfadein {
+  from {
+    opacity: 0;
+    transform: translateY(-1em) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(0.18);
+  }
+}
+@keyframes qrfadeout {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(0.18);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1em) scale(0);
   }
 }
 /* used for progressive background image loading */
