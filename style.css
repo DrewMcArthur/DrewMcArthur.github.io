@@ -73,7 +73,6 @@ a:hover{
   margin: 6% 5% 0 6%;
   border: 1px solid black;
   border-radius: 3px;
-  opacity: 0;
   visibility: hidden;
   position: relative;
 }
@@ -89,7 +88,6 @@ a:hover{
   transform: translateX(0);
   animation: fadeinright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
   visibility: visible;
-  opacity: 1;
 }
 
 .vcard .icons {
@@ -227,6 +225,7 @@ a.social-icon > i.fa-address-card {
 }
 
 /* idea for fade in taken from https://malone.io */
+/* used for .main on load */
 @keyframes fadein {
   from {
     opacity: 0;
