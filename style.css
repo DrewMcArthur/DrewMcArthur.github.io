@@ -74,6 +74,7 @@ a:hover{
   border: 1px solid black;
   border-radius: 3px;
   opacity: 0;
+  visibility: hidden;
   position: relative;
 }
 .vcard * {
@@ -87,6 +88,7 @@ a:hover{
 .vcard.open {
   transform: translateX(0);
   animation: fadeinright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  visibility: visible;
   opacity: 1;
 }
 
@@ -239,20 +241,24 @@ a.social-icon > i.fa-address-card {
 @keyframes fadeinright {
   from {
     opacity: 0;
+    visibility: hidden;
     transform: translateX(5em);
   }
   to {
     opacity: 1;
+    visibility: visible;
     transform: translateX(0);
   }
 }
 @keyframes fadeoutright {
   from {
     opacity: 1;
+    visibility: visible;
     transform: translateX(0em);
   }
   to {
     opacity: 0;
+    visibility: hidden;
     transform: translateX(5em);
   }
 }
