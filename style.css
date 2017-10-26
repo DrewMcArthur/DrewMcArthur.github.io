@@ -100,6 +100,7 @@ a:hover{
   float: left;
   width: 50px;
   padding: .5em .5em 0 .5em;
+  text-align: center;
 }
 .vcard .text {
   float: left;
@@ -123,7 +124,7 @@ a:hover{
 }
 
 .vcard .dl-btn {
-  text-align: center;
+  display: inline-block;
   transition: transform .1s ease-in-out;
 }
 .vcard .dl-btn svg {
