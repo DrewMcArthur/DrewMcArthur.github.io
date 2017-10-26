@@ -51,7 +51,7 @@ a:hover{
 }
 #tiny_bg.faded {
   transform: scale(1);
-  animation: loaded .5s cubic-bezier(0.48, 0.29, 0.76, 0.68);
+  animation: loaded .5s cubic-bezier(.48, .29, .76, .68);
   opacity: 0;
 }
 
@@ -62,11 +62,11 @@ a:hover{
   min-width: 258px;
   margin: 8% 0 0 11%;
   float: left;
-  animation: fadein 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  animation: fadein 1s cubic-bezier(.12, .98, .38, 1);
 }
 
 .main > div.name {
-  margin-left: 0.1em;
+  margin-left: .1em;
   font-size: 36px;
 }
 
@@ -87,18 +87,18 @@ a:hover{
 
 .vcard.close {
   transform: translateX(5em);
-  animation: fadeoutright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  animation: fadeoutright 1s cubic-bezier(.12, .98, .38, 1);
 }
 .vcard.open {
   transform: translateX(0);
-  animation: fadeinright 1s cubic-bezier(0.12, 0.98, 0.38, 1);
+  animation: fadeinright 1s cubic-bezier(.12, .98, .38, 1);
   visibility: visible;
 }
 
 .vcard .icons {
   float: left;
   width: 50px;
-  padding: 0.5em 0.5em 0 0.5em;
+  padding: .5em .5em 0 .5em;
 }
 .vcard .text {
   float: left;
@@ -115,7 +115,7 @@ a:hover{
 }
 .vcard .text .name,
 .vcard .text .email {
-  margin-left: 0.6em;
+  margin-left: .6em;
 }
 .vcard .phone {
   font-size: 18px;
@@ -123,13 +123,13 @@ a:hover{
 
 .vcard .dl-btn {
   text-align: center;
-  transition: transform 0.1s ease-in-out;
+  transition: transform .1s ease-in-out;
 }
 .vcard .dl-btn svg {
   padding-top: .4em;
 }
 .vcard .dl-btn svg path {
-  transform: scale(0.5, 0.5);
+  transform: scale(.5, .5);
 }
 .vcard .dl-btn:hover {
   transform: scale(1.1,1.1);
@@ -211,19 +211,7 @@ a.social-icon > i.fa-address-card {
   #tiny_bg.faded {
     transform: scale(1);
   }
-}
-/* for collapsing the row of social icons into two */
-@media (max-width: 732px) and (min-width: 557px) {
-  .main {
-    min-width: 151px;
-    width: 151px;
-  }
-  ul.social-icons {
-    float: none;
-  }
-}
-/* for when the address card gets bumped to the next line */
-@media (max-width: 556px) {
+  /* also handle positioning of contact card */
   .main {
     width: 78%;
   }
