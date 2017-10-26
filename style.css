@@ -1,6 +1,6 @@
 /* general rules */
 * {
-  font-family:'Lato','Ubuntu', sans-serif;
+  font-family:'Lato','Ubuntu',sans-serif;
   font-weight:300;
   font-size: 22px; 
   line-height: 1.6em;
@@ -51,7 +51,7 @@ a:hover{
 }
 #tiny_bg.faded {
   transform: scale(1);
-  animation: loaded .5s cubic-bezier(.48, .29, .76, .68);
+  animation: loaded .5s cubic-bezier(.48,.29,.76,.68);
   opacity: 0;
 }
 
@@ -62,7 +62,7 @@ a:hover{
   min-width: 258px;
   margin: 8% 0 0 11%;
   float: left;
-  animation: fadein 1s cubic-bezier(.12, .98, .38, 1);
+  animation: fadein 1s cubic-bezier(.12,.98,.38,1);
 }
 
 .main > div.name {
@@ -77,7 +77,7 @@ a:hover{
   margin: 6% 5% 0 6%;
   border: 1px solid black;
   border-radius: 3px;
-  background-color: rgba(255,255,255,.4);
+  background-color: rgba(255,255,255,.6);
   float: left;
   position: relative;
   visibility: hidden;
@@ -88,11 +88,11 @@ a:hover{
 
 .vcard.close {
   transform: translateX(5em);
-  animation: fadeoutright 1s cubic-bezier(.12, .98, .38, 1);
+  animation: fadeoutright 1s cubic-bezier(.12,.98,.38,1);
 }
 .vcard.open {
   transform: translateX(0);
-  animation: fadeinright 1s cubic-bezier(.12, .98, .38, 1);
+  animation: fadeinright 1s cubic-bezier(.12,.98,.38,1);
   visibility: visible;
 }
 
@@ -130,7 +130,7 @@ a:hover{
   padding-top: .4em;
 }
 .vcard .dl-btn svg path {
-  transform: scale(.5, .5);
+  transform: scale(.5,.5);
 }
 .vcard .dl-btn:hover {
   transform: scale(1.1,1.1);
@@ -196,9 +196,9 @@ a.social-icon > i.fa-address-card {
   color: #000;
 }
 
-/* when the screen is more horizontal than vertical, 
+/* when the screen is more horizontal than vertical,
    change to a centered background */
-@media (max-aspect-ratio: 13/12){
+@media (max-aspect-ratio: 13/12) {
   #bg, #tiny_bg {
     background-position: bottom;
     background-size: contain;
@@ -212,7 +212,9 @@ a.social-icon > i.fa-address-card {
   #tiny_bg.faded {
     transform: scale(1);
   }
-  /* also handle positioning of contact card */
+}
+/* handle positioning of contact card */
+@media (max-width: 693px) {
   .main {
     width: 78%;
   }
