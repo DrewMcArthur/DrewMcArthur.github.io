@@ -98,15 +98,15 @@ a:hover{
 .vcard .icons {
   float: left;
   width: 50px;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0 0.5em;
 }
 .vcard .text {
   float: left;
 }
 
 .vcard .photo {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   margin: auto;
 }
 .vcard .photo img {
@@ -121,15 +121,18 @@ a:hover{
   font-size: 18px;
 }
 
-.vcard .dl-btn, 
-.vcard .x-btn {
+.vcard .dl-btn {
   text-align: center;
-  transform: scale(0.5);
   transition: transform 0.1s ease-in-out;
 }
-.vcard .dl-btn:hover, 
-.vcard .x-btn:hover {
-  transform: scale(0.55);
+.vcard .dl-btn svg {
+  padding-top: .4em;
+}
+.vcard .dl-btn svg path {
+  transform: scale(0.5, 0.5);
+}
+.vcard .dl-btn:hover {
+  transform: scale(1.1,1.1);
 }
 
 /* social icon links */
