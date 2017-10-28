@@ -135,7 +135,7 @@ a:hover{
   transition: color .1s ease-in-out;
 }
 .vcard .dl-btn:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.05,1.05);
 }
 .vcard .dl-btn:hover svg path {
   fill: #444;
