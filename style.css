@@ -169,6 +169,8 @@ a.social-icon > i {
 }
 .social-icons a > i.fa:hover {
   padding: 4px 8px;
+  border-bottom: 2.5px solid;
+  border-radius: 2px;
 }
 
 a.social-icon > i.fa-address-card {
@@ -179,27 +181,35 @@ a.social-icon > i.fa-address-card {
 .fa-address-card:hover,
 .fa-address-card.open {
   color: #9e3416;
+  border-color: #9e3416;
 }
 .fa-facebook:hover {
   color: #4676dc;
+  border-color: #4676dc;
 }
 .fa-instagram:hover {
   color: #eb8231;
+  border-color: #eb8231;
 }
 .fa-twitter:hover {
   color: #52a0fd;
+  border-color: #52a0fd;
 }
 .fa-snapchat-ghost:hover {
   color: #FFEC00;
+  border-color: #FFEC00;
 }
 .fa-vimeo:hover {
   color: #3D95CE;
+  border-color: #3D95CE;
 }
 .fa-linkedin:hover {
   color: #0073a4;
+  border-color: #0073a4;
 }
 .fa-github:hover{
   color: #000;
+  border-color: #000;
 }
 
 /* when the screen is more horizontal than vertical,
