@@ -72,11 +72,11 @@ a:hover{
 
 /* contact card modal */
 .vcard {
-  width: 250px;
-  padding: .7em;
+  width: 225px;
+  padding: .5em;
   margin: 6% 5% 0 6%;
-  border: 1px solid black;
-  border-radius: 3px;
+  border: .1em solid #999;
+  border-radius: .35em;
   background-color: rgba(255,255,255,.6);
   float: left;
   position: relative;
@@ -99,7 +99,8 @@ a:hover{
 .vcard .icons {
   float: left;
   width: 50px;
-  padding: .5em .5em 0 .5em;
+  padding-top: .45em;
+  margin-bottom: -.5em;
   text-align: center;
 }
 .vcard .text {
@@ -107,13 +108,13 @@ a:hover{
 }
 
 .vcard .photo {
-  height: 40px;
-  width: 40px;
+  height: 47px;
+  width: 47px;
   margin: auto;
 }
 .vcard .photo img {
   max-width: 100%;
-  border-radius: 100%;
+  border-radius: .35em;
 }
 .vcard .text .name,
 .vcard .text .email {
