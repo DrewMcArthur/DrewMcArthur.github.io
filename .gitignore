@@ -1,5 +1,7 @@
 # mac-specific
 .DS_Store
+*.swp
+*.swo
 
 # Logs
 logs
