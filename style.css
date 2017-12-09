@@ -63,6 +63,7 @@ a:hover{
   margin: 8% 0 0 11%;
   float: left;
   animation: fadein 1s cubic-bezier(.12,.98,.38,1);
+  position: relative;
 }
 
 .main > div.name {
@@ -169,9 +170,21 @@ a.social-icon > i {
   transition: .5s;
 }
 .social-icons a > i.fa:hover {
-  padding: 4px 8px;
+  /*padding: 4px 8px;*/
+}
+#hoverbar {
+  display: none;
+  width: 27px;
   border-bottom: 2.5px solid;
   border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: left;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
 }
 
 a.social-icon > i.fa-address-card {
