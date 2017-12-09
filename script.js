@@ -30,18 +30,17 @@ function showVcard() {
   }
 }
 
-var barLeftX = 0;
 
-function onHover(e) {
+function lockBar(e) {
   // when we hover over the social list, 
   var hoverbar = document.getElementById('hoverbar');
   var iconWidth = 32.5;
   // show the hoverbarr
-  hoverbar.style.display = "block";
+  hoverbar.style.opacity = "1";
   // get mouses position while hovering over the social list
   x=e.clientX; 
   // set mouses position, relative within the coordinates of the social list
-  barLeftX = x - 75;
+  var barLeftX = x - 70;
   // bring the hoverBar's left coordinate to the nearest multiple of 27
   // (the width of the social icons) to place it under the left corner 
   // of the hovered icon.  i.e. 29px is over the 1st indexed icon, so the left
@@ -55,10 +54,36 @@ function onHover(e) {
   hoverbar.style.borderColor = colors[barLeftX / iconWidth];
 }
 
+function floatBar(e) {
+  // when we hover over the social list, 
+  var hoverbar = document.getElementById('hoverbar');
+  // show the hoverbarr
+  hoverbar.style.opacity = "1";
+  // get mouses position while hovering over the social list
+  x=e.clientX; 
+  // set mouses position, relative within the coordinates of the social list
+  var barLeftX = x - 75;
+  // move the bar to that x coordinate
+  //hoverbar.style.left = barLeftX+"px";
+  // remove the color
+  hoverbar.style.borderColor = "#666";
+}
+
 function hideBar(){
   // when we stop hovering over the social list, 
   var hoverbar = document.getElementById('hoverbar');
   // hide the hoverbarr
-  hoverbar.style.display = "none";
+  hoverbar.style.opacity = "0";
   
 }
+
+// attach event listeners to each icon
+var li = document.getElementsByClassName("fa");
+for (var i = 0; i < li.length; i++) {
+  li[i].addEventListener("mousemove", lockBar);
+  li[i].addEventListener("mouseout", floatBar);
+}
+
+// and the parent container
+var socialList = document.getElementById("social-icons");
+socialList.addEventListener("mouseleave", hideBar);
