@@ -10,7 +10,6 @@
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <title>mcarthur.in</title>
   <script src="https://use.fontawesome.com/03087e1a79.js"></script>
-  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <div class='bg_wrapper'>
@@ -19,7 +18,7 @@
   </div>
   <div class='main'>
     <div class='name'>Drew McArthur</div>
-    <ul class="social-icons">
+    <ul id="social-icons" class="social-icons">
       <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/drewdiezel" class="social-icon"> 
         <i class="fa fa-facebook"></i></a></li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/drewdiezel" class="social-icon"> 
@@ -37,6 +36,7 @@
       <li><a href="/#contact" class="social-icon" onclick="showVcard()"> 
         <i class="fa fa-address-card"></i></a></li>
     </ul>
+    <div id='hoverbar'></div>
   </div>
   <div class='vcard'>
     <div class='icons'>
@@ -61,5 +61,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-107580118-1');
   </script>
+  <!-- custom dom manipulation -->
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
