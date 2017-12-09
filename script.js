@@ -35,12 +35,14 @@ function lockBar(e) {
   // when we hover over the social list, 
   var hoverbar = document.getElementById('hoverbar');
   var iconWidth = 32.5;
+  var mainOffset = document.body.offsetWidth *.11 - 5;
+  console.log(mainOffset);
   // show the hoverbarr
   hoverbar.style.opacity = "1";
   // get mouses position while hovering over the social list
   x=e.clientX; 
   // set mouses position, relative within the coordinates of the social list
-  var barLeftX = x - 70;
+  var barLeftX = x - mainOffset;
   // bring the hoverBar's left coordinate to the nearest multiple of 27
   // (the width of the social icons) to place it under the left corner 
   // of the hovered icon.  i.e. 29px is over the 1st indexed icon, so the left
