@@ -169,9 +169,11 @@ a.social-icon > i {
   -webkit-transition:.5s;
   transition: .5s;
 }
+/* new hover bar makes this obsolete
+ * increases padding on whichever icon is being hovered over
 .social-icons a > i.fa:hover {
-  /*padding: 4px 8px;*/
-}
+  padding: 4px 8px;
+} */
 #hoverbar {
   display: none;
   width: 27px;
