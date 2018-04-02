@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/drewmcarthur
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mcarthur.in
+  * I am drewmcarthur (https://keybase.io/drewmcarthur) on keybase.
+  * I have a public key ASCYP2Px42E-TjrIIqd62wj7TZL3nR4HFfwtVCpIzP7Llwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200182f38ba0383ebbc57e9558d0d8a63a6e1370c308a02bc257083d1f65a1f6080a",
+      "host": "keybase.io",
+      "kid": "0120983f63f1e3613e4e3ac822a77adb08fb4d92f79d1e0715fc2d542a48ccfecb970a",
+      "uid": "f27e6808af1fd69bd16096ed026d4e19",
+      "username": "drewmcarthur"
+    },
+    "merkle_root": {
+      "ctime": 1522679030,
+      "hash": "edf2a974c6e3aa83a837ce9f2ee8227d3c0c2be187a6222987e8e2767f80f868bf2248d9b0bfca4cd35f2a3b550be9647b14e59c65bd8d625c1c33baf95d9d74",
+      "hash_meta": "2b1a9fc1cc4409ee38b0e39715d585107e640d3b28d85f3930b9426bc755cbba",
+      "seqno": 2322648
+    },
+    "service": {
+      "hostname": "mcarthur.in",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1522679043,
+  "expire_in": 504576000,
+  "prev": "0e085f0796f7a44a35a838d2910f875b42a785e8a88140086a1f0ee5450d0a3f",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgmD9j8eNhPk46yCKnetsI+02S950eBxX8LVQqSMz+y5cKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDE4MmYzOGJhMDM4M2ViYmM1N2U5NTU4ZDBkOGE2M2E2ZTEzNzBjMzA4YTAyYmMyNTcwODNkMWY2NWExZjYwODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOTgzZjYzZjFlMzYxM2U0ZTNhYzgyMmE3N2FkYjA4ZmI0ZDkyZjc5ZDFlMDcxNWZjMmQ1NDJhNDhjY2ZlY2I5NzBhIiwidWlkIjoiZjI3ZTY4MDhhZjFmZDY5YmQxNjA5NmVkMDI2ZDRlMTkiLCJ1c2VybmFtZSI6ImRyZXdtY2FydGh1ciJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUyMjY3OTAzMCwiaGFzaCI6ImVkZjJhOTc0YzZlM2FhODNhODM3Y2U5ZjJlZTgyMjdkM2MwYzJiZTE4N2E2MjIyOTg3ZThlMjc2N2Y4MGY4NjhiZjIyNDhkOWIwYmZjYTRjZDM1ZjJhM2I1NTBiZTk2NDdiMTRlNTljNjViZDhkNjI1YzFjMzNiYWY5NWQ5ZDc0IiwiaGFzaF9tZXRhIjoiMmIxYTlmYzFjYzQ0MDllZTM4YjBlMzk3MTVkNTg1MTA3ZTY0MGQzYjI4ZDg1ZjM5MzBiOTQyNmJjNzU1Y2JiYSIsInNlcW5vIjoyMzIyNjQ4fSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1jYXJ0aHVyLmluIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDUifSwiY3RpbWUiOjE1MjI2NzkwNDMsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiMGUwODVmMDc5NmY3YTQ0YTM1YTgzOGQyOTEwZjg3NWI0MmE3ODVlOGE4ODE0MDA4NmExZjBlZTU0NTBkMGEzZiIsInNlcW5vIjoxMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDa0eSU2Kg/eSTEKLckNzzsWxtNyAtVeHRIJpjksBioAXx4LvkBrHqrYyMxVZf2OO9Yg1lmrslM7EgNQDSU79sNqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgpM+wUAwAoQNE1szGZubh5fARvdMDj0rIfSwmwwNyU7ajdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drewmcarthur
+
+==================================================================
