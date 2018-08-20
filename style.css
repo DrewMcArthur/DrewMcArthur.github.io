@@ -363,7 +363,7 @@ ul.social-icons li.gitlab {
     bottom: 5em;
   }
   #bg.bumped {
-    bottom: 10em;
+    bottom: 10.25em;
   }
   #tiny_bg {
     bottom: 7em;
@@ -375,7 +375,7 @@ ul.social-icons li.gitlab {
     bottom: 0;
   }
   #proj-arrow.bumped {
-    bottom: 5em;
+    bottom: 5.25em;
   }
 }
 /* handle positioning of contact card */
