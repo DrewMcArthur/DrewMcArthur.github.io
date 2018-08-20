@@ -319,7 +319,7 @@ ul.social-icons li.gitlab {
    change to a centered background */
 @media (max-aspect-ratio: 13/12) {
   #bg, #tiny_bg {
-    background-position: bottom;
+    background-position: 100% 100%;
     background-size: contain;
   }
   #bg {
