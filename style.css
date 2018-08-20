@@ -37,6 +37,8 @@ a:hover{
 #bg {
   background-image: url('/assets/bg.jpg');
   z-index: -5;
+       -o-transition: bottom 0.5s;
+     -moz-transition: bottom 0.5s;
   -webkit-transition: bottom 0.5s;
           transition: bottom 0.5s;
 }
