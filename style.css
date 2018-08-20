@@ -61,6 +61,12 @@ a:hover{
   animation: loaded .5s cubic-bezier(.48,.29,.76,.68);
   opacity: 0;
 }
+#tiny_bg.behind {
+  z-index: -20;
+  opacity: 0.6;
+  transform: scale(1);
+  bottom: 1em;
+}
 
 /* main text */
 .main {
@@ -353,11 +359,17 @@ ul.social-icons li.gitlab {
 }
 @media only screen and (max-width: 380px) {
   /* use this to guess if it's mobile */
-  #tiny_bg, #bg{
+  #bg {
     bottom: 5em;
   }
-  #tiny_bg.bumped, #bg.bumped {
+  #bg.bumped {
     bottom: 10em;
+  }
+  #tiny_bg {
+    bottom: 7em;
+  }
+  #tiny_bg.behind {
+    bottom: 6em;
   }
   #proj-arrow {
     bottom: 0;
