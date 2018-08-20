@@ -86,7 +86,7 @@ projBtn.addEventListener("click", function bumpBg(){
   else
   {
     bg.classList += " bumped";
-    tinybg.classList += " bumped";
+    // tinybg.classList += " bumped";   // might wanna leave this underneath
     projBtn.classList += " bumped";
   }
 })
@@ -95,4 +95,8 @@ projBtn.addEventListener("click", function bumpBg(){
 window.onload = function(){
   // add the class containing the fadeout animation to the blurred background
   document.getElementById('tiny_bg').className += "faded";
+  setTimeout(function replacetiny(){
+    document.getElementById('tiny_bg').classList.add('behind');
+    document.getElementById('tiny_bg').classList.remove('faded');
+  }, 1000);
 }

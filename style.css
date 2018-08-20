@@ -37,7 +37,10 @@ a:hover{
 #bg {
   background-image: url('/assets/bg.jpg');
   z-index: -5;
-  transition: bottom 0.5s;
+       -o-transition: all 0.5s;
+     -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
 }
 #tiny_bg.bumped, #bg.bumped {
   bottom: 5em;
@@ -57,6 +60,12 @@ a:hover{
   transform: scale(1);
   animation: loaded .5s cubic-bezier(.48,.29,.76,.68);
   opacity: 0;
+}
+#tiny_bg.behind {
+  z-index: -20;
+  opacity: 0.6;
+  transform: scale(1);
+  bottom: 1em;
 }
 
 /* main text */
@@ -88,9 +97,6 @@ a:hover{
 
   cursor: pointer;
 }
-#proj-arrow.bumped {
-  bottom: 6em;
-}
 #proj-arrow > p.top {
   text-align: center;
   margin-bottom: -0.6em;
@@ -100,7 +106,10 @@ a:hover{
 }
 #proj-arrow > .arrow {
   background-color:rgb(116, 122, 161); 
-  transition: background-color 0.1s;
+  -webkit-transition: background-color 0.1s;
+          transition: background-color 0.1s;
+  -webkit-transition: -webkit-transform 0.1s;
+          transition:         transform 0.1s;
   height: .2em;
   border-radius: .3em;
   display: inline-flex;
@@ -115,11 +124,27 @@ a:hover{
   transform: rotate(-12deg);
   margin-left: -0.25em;
 }
+  /* hovering */
 #proj-arrow:hover > p.top {
   color: rgb(200,200,200);
+  opacity: 1;
+  transition: opacity .1s;
 }
 #proj-arrow:hover > .arrow {
   background-color: rgb(200,200,200);
+}
+/* bumped */
+#proj-arrow.bumped {
+  bottom: 6em;
+}
+#proj-arrow.bumped > p.top {
+  opacity: 0;
+}
+#proj-arrow.bumped > .arrow.left {
+  transform: rotate(-12deg);
+}
+#proj-arrow.bumped > .arrow.right {
+  transform: rotate(12deg);
 }
 
 /* apps */
@@ -334,17 +359,23 @@ ul.social-icons li.gitlab {
 }
 @media only screen and (max-width: 380px) {
   /* use this to guess if it's mobile */
-  #tiny_bg, #bg{
+  #bg {
     bottom: 5em;
   }
-  #tiny_bg.bumped, #bg.bumped {
-    bottom: 10em;
+  #bg.bumped {
+    bottom: 10.25em;
+  }
+  #tiny_bg {
+    bottom: 7em;
+  }
+  #tiny_bg.behind {
+    bottom: 6em;
   }
   #proj-arrow {
     bottom: 0;
   }
   #proj-arrow.bumped {
-    bottom: 5em;
+    bottom: 5.25em;
   }
 }
 /* handle positioning of contact card */
