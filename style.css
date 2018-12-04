@@ -84,69 +84,6 @@ a:hover{
   font-size: 36px;
 }
 
-/* my apps links */
-#proj-arrow {
-  position: fixed;
-  left: 35%;
-  bottom: 1em;
-  transition: bottom 0.5s;
-
-  width: 30%;
-  max-width: 300px;
-  height: 5em;
-
-  cursor: pointer;
-}
-#proj-arrow > p.top {
-  text-align: center;
-  margin-bottom: -0.6em;
-  font-size: 1.1em;
-  color: rgb(113, 131, 193);
-  transition: color 0.1s;
-}
-#proj-arrow > .arrow {
-  background-color:rgb(116, 122, 161); 
-  -webkit-transition: background-color 0.1s;
-          transition: background-color 0.1s;
-  -webkit-transition: -webkit-transform 0.1s;
-          transition:         transform 0.1s;
-  height: .2em;
-  border-radius: .3em;
-  display: inline-flex;
-  width: 48%;
-}
-#proj-arrow > .arrow.left {
-  transform: rotate(12deg);
-  margin-right: -0.25em;
-  margin-left: 0.35em;
-}
-#proj-arrow > .arrow.right {
-  transform: rotate(-12deg);
-  margin-left: -0.25em;
-}
-  /* hovering */
-#proj-arrow:hover > p.top {
-  color: rgb(200,200,200);
-  opacity: 1;
-  transition: opacity .1s;
-}
-#proj-arrow:hover > .arrow {
-  background-color: rgb(200,200,200);
-}
-/* bumped */
-#proj-arrow.bumped {
-  bottom: 6em;
-}
-#proj-arrow.bumped > p.top {
-  opacity: 0;
-}
-#proj-arrow.bumped > .arrow.left {
-  transform: rotate(-12deg);
-}
-#proj-arrow.bumped > .arrow.right {
-  transform: rotate(12deg);
-}
-
 /* apps */
 #apps {
   width: 80%;

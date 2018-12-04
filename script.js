@@ -72,25 +72,6 @@ for (var i = 0; i < li.length; i++) {
 var socialList = document.getElementById("social-icons");
 socialList.addEventListener("mouseleave", hideBar);
 
-var projBtn = document.getElementById("proj-arrow");
-var bg = document.getElementById('bg');
-var tinybg = document.getElementById('tiny_bg');
-projBtn.addEventListener("click", function bumpBg(){
-  console.log(bg.classList)
-  if (bg.classList.contains("bumped"))
-  {
-    bg.classList.remove("bumped")
-    tinybg.classList.remove("bumped")
-    projBtn.classList.remove("bumped")
-  }
-  else
-  {
-    bg.classList += " bumped";
-    // tinybg.classList += " bumped";   // might wanna leave this underneath
-    projBtn.classList += " bumped";
-  }
-})
-
 // when the window is fully loaded, images included
 window.onload = function(){
   // add the class containing the fadeout animation to the blurred background
