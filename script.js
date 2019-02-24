@@ -8,9 +8,9 @@ function showVcard() {
     }
   } else { 
     document.getElementsByClassName('vcard')[0].classList.remove("close");
-    document.getElementsByClassName('fa-address-card')[0].classList.remove("close");
+    document.getElementsByClassName('fa-phone')[0].classList.remove("close");
     document.getElementsByClassName('vcard')[0].className += " open";
-    document.getElementsByClassName('fa-address-card')[0].className += " open";
+    document.getElementsByClassName('fa-phone')[0].className += " open";
   }
 }
 
