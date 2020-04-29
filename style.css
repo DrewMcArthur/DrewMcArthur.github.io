@@ -166,6 +166,7 @@ div.app > a > p {
 }
 
 .vcard .dl-btn {
+  margin-top: 0.5em;
   display: inline-block;
   transition: transform .1s ease-in-out;
 }
