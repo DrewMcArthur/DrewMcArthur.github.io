@@ -1,8 +1,8 @@
 /* temporary */
-li.facebook,
-li.instagram,
-li.snapchat,
-li.twitter {
+ul.social-icons > li.facebook,
+ul.social-icons > li.instagram,
+ul.social-icons > li.snapchat,
+ul.social-icons > li.twitter {
   display: none;
 }
 
