@@ -1,3 +1,11 @@
+/* temporary */
+li.facebook,
+li.instagram,
+li.snapchat,
+li.twitter {
+  display: none;
+}
+
 /* general rules */
 * {
   font-family:'Lato','Ubuntu',sans-serif;
