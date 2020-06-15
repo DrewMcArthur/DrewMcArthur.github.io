@@ -2,8 +2,13 @@
 ul.social-icons > li.facebook,
 ul.social-icons > li.instagram,
 ul.social-icons > li.snapchat,
-ul.social-icons > li.twitter {
+ul.social-icons > li.twitter,
+ul.social-icons > li.venmo {
   display: none;
+}
+
+ul.social-icons li {
+  margin-left: 1em;
 }
 
 /* general rules */
