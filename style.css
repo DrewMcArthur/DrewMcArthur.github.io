@@ -1,12 +1,9 @@
 /* temporary */
 ul.social-icons > li.facebook,
 ul.social-icons > li.snapchat,
+ul.social-icons > li.contact,
 ul.social-icons > li.venmo {
   display: none;
-}
-
-ul.social-icons li {
-  margin-left: 1em;
 }
 
 /* general rules */
@@ -120,80 +117,6 @@ div.app > a > p {
   margin: 0;
   margin-top: -0.3em;
   font-size: 0.8em;
-}
-
-/* contact card modal */
-.vcard {
-  width: 225px;
-  padding: .6em;
-  margin: 8% 5% 0 6%;
-  border: .1em solid #999;
-  border-radius: .35em;
-  background-color: rgba(255,255,255,.6);
-  float: left;
-  position: relative;
-  visibility: hidden;
-}
-.vcard * {
-  font-size: 20px;
-  line-height: 1em;
-}
-
-.vcard.close {
-  transform: translateX(5em);
-  animation: fadeoutright 1s cubic-bezier(.12,.98,.38,1);
-}
-.vcard.open {
-  transform: translateX(0);
-  animation: fadeinright 1s cubic-bezier(.12,.98,.38,1);
-  visibility: visible;
-}
-
-.vcard .icons {
-  float: left;
-  width: 50px;
-  margin-bottom: -.5em;
-  text-align: center;
-}
-.vcard .text {
-  float: left;
-}
-
-.vcard .photo {
-  height: 47px;
-  width: 47px;
-  margin: auto;
-}
-.vcard .photo img {
-  max-width: 100%;
-  border-radius: .35em;
-}
-.vcard .text .name,
-.vcard .text .email {
-  margin: 0 0 .6em .6em;
-}
-.vcard .phone {
-  font-size: 18px;
-}
-
-.vcard .dl-btn {
-  margin-top: 0.5em;
-  display: inline-block;
-  transition: transform .1s ease-in-out;
-}
-.vcard .dl-btn svg {
-  padding-top: .4em;
-}
-.vcard .dl-btn svg path {
-  transform: scale(.5,.5);
-  transition: color .1s ease-in-out;
-}
-.vcard .dl-btn:hover {
-  transform: scale(1.05,1.05);
-}
-.vcard .dl-btn:hover svg path {
-  fill: #444;
-  stroke: #444;
 }
 
 /* social icon links */

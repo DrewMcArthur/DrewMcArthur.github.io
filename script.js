@@ -1,19 +1,3 @@
-function showVcard() {
-  var els = document.getElementsByClassName('open')
-  var nEls = els.length;
-  if (nEls > 0) {
-    for (var i = 0; i < nEls; i++){
-      els[0].className += " close";
-      els[0].classList.remove("open");
-    }
-  } else { 
-    document.getElementsByClassName('vcard')[0].classList.remove("close");
-    document.getElementsByClassName('fa-phone')[0].classList.remove("close");
-    document.getElementsByClassName('vcard')[0].className += " open";
-    document.getElementsByClassName('fa-phone')[0].className += " open";
-  }
-}
-
 function lockBar(e) {
   // when we hover over the social list, 
   var hoverbar = document.getElementById('hoverbar');
